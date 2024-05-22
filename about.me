@@ -1,0 +1,15 @@
+Templating Engine: A templating engine allows you to embed JavaScript 
+code within your HTML files. This helps in rendering dynamic content on your web pages.
+
+
+Layouts: Layouts are templates that wrap around your view templates, 
+allowing you to define a common structure (like headers and footers) for all your pages.
+
+
+app.use(expressLayouts);: This line sets up the express-ejs-layouts middleware. This middleware helps you use layouts in your views,
+ making it easier to manage common elements like headers, footers, and sidebars across multiple pages.
+
+
+ app.set('layout', './layouts/main');: This line specifies the default layout file to be used. In this case, it is ./layouts/main.ejs. This layout file typically includes the common HTML structure, and your individual views will be injected into this layout.
+
+app.set('view engine', 'ejs');: This line sets the templating engine for your Express.js application to EJS (Embedded JavaScript). It allows you to use .ejs files to render dynamic HTML.
